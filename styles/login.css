@@ -1,0 +1,116 @@
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/621/859/641/peliculas-terror-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #b3b3b3;
+    background-blend-mode: multiply;
+  }
+  body .ti {
+    position: absolute;
+    align-self: flex-start;
+    left: 10px;
+    color:red;
+    font-size: 2.5em;
+    background-color:black;
+  }
+  body .logo h2 {
+    height: 75px;
+    width: auto;
+  }
+  body .login {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    width: 300px;
+    height: 400px;
+    padding: 60px 68px 40px;
+  }
+  body .login__title {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  body .login-g {
+    position: relative;
+    z-index: 10;
+    display: flex;
+  }
+  body .login-label {
+    position: absolute;
+    z-index: 150;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    top: 30px;
+    left: 18px;
+    transition: all 300ms ease-in;
+  }
+  body .login-input {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    background: #333;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    opacity: 1;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 50px;
+    padding: 12px 18px 0;
+  }
+  body .login-input:focus + .login-label {
+    top: 15px;
+    font-size: 0.7rem;
+  }
+  body .login-two {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .login-two-text {
+    opacity: 1;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+  body .login-two-ps {
+    transition: all 0.3s ease-in;
+    color: #b3b3b3;
+  }
+  body .login-two-ps:hover {
+    text-decoration: underline;
+    
+  }
+  #submit{
+    background-color: rgb(255, 0, 0);
+    width: auto;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  ::-moz-placeholder {
+    font-size: 0.7rem;
+  }
+  
+  :-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  
+  ::placeholder {
+    font-size: 0.7rem;
+  }
+
+  

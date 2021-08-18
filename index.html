@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETNET</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">FIXMOVIE</h2>
+            <nav>
+                <a href="#" class="activo">Inicio</a>
+                <a href="login.html">Login</a>
+                <a href="#items">Películas</a>
+                <a href="#">Series</a>
+                <a href="#milist">Mi lista</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="pelicula-principal">
+            <div class="contenedor">
+                <h3 class="titulo">El Conjuro 3: Obligado por el demonio</h3>
+                <p class="descripcion">
+                    Los investigadores paranormales Ed y Lorraine Warren se encuentran con lo que se convertiría en uno
+                    de los casos más sensacionales de sus archivos. La lucha por el alma de un niño los lleva más allá
+                    de todo lo que habían visto antes, para marcar la primera vez en la historia de los Estados Unidos
+                    que un sospechoso de asesinato reclamaría posesión demoníaca como defensa.
+                </p>
+                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fas fa-video"></i></i>Ver Trailer</button>
+            </div>
+        </div>
+
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Películas Recomendadas</h3>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <button role="button" id="f-Iz" class="flecha-izquierda"><i
+                        class="fas fa-angle-left"></i></button>
+
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div id="milist" class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/07/gj4Lwldois15IaNnl4tadesHGC4.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="https://www.ecartelera.com/carteles/13100/13120/002_m.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://procinal.com/uploads/PELICULAS/Img_movies/Img_360x500/FF9nuevoposter.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/05/emM894kjspdQsHyTAF7sjRNlbTr.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/04/Dios-no-esta-muerto-3:-Una-luz-en-la-oscuridad-(2018)-(poster2).jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/05/1917-(2019)-(poster18).jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/05/Hasta-el-ultimo-hombre-(2016)-(poster27).jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="https://www.proimagenescolombia.com/photos/57150_6183_imagen__.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="https://pics.filmaffinity.com/Shooter_El_tirador-258341023-large.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/07/yeJDavUZnIJYTIZ9BB6H4YjePCT.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="https://www.ecartelera.com/carteles/13100/13120/002_m.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/07/gj4Lwldois15IaNnl4tadesHGC4.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/07/hBcdtoe3Vu8MacviGjkJRd0U1BG.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img
+                                    src="https://www.cine-calidad.com/wp-content/uploads/2021/07/ptGolwZ05E7v21vcClQyLDRduVS.jpg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <button role="button" id="f-Der" class="flecha-derecha"><i
+                        class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="row" id="items"></div>
+
+    <template id="template-peli">
+      <div class="card">
+        <h5></h5>
+          <img id="image" src="" alt="" class="img-thumbnail my-4"></img>
+      </div>
+    </template>   
+    
+    
+    <div id="detail"></div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/scripts.js"></script>
+</body>
+<footer class="endpagina">
+    <span>&#9400;opyright 2021  FIXMOVIE.INC</span>
+    <ul>
+        <li><a href="index.html">Página Principal</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Soporte</a></li>
+    </ul>
+</footer>
+
+</html>
